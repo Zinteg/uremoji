@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UrEmoji</title>
+<link rel="shortcut icon" href="img/logo/logo-hand.png" type="image/x-icon">
+<link rel="stylesheet" href="https://zinwork.github.io/v1/header.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/adapt.css">
+<style>
+.flag{width:80px;height:80px;display:inline-block;margin:5px;background-repeat:no-repeat;background-position:center;background-size:contain;cursor:pointer}
+.flag-us{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/united-states-twitter.png)}
+.flag-ru{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/russia-twitter.png)}
+.flag-lu{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/luxembourg-twitter.png)}
+.flag-nl{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/netherlands-twitter.png)}
+.flag-lt{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/lithuania-twitter.png)}
+.flag-lv{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/latvia-twitter.png)}
+.flag-ee{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/estonia-twitter.png)}
+.flag-se{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/sweden-twitter.png)}
+.flag-fi{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/finland-twitter.png)}
+.flag-no{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/norway-twitter.png)}
+.flag-dk{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/denmark-twitter.png)}
+.flag-is{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/iceland-twitter.png)}
+.flag-ie{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/ireland-twitter.png)}
+.flag-gb{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/united-kingdom-twitter.png)}
+.flag-be{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/belgium-twitter.png)}
+.flag-bg{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/bulgaria-twitter.png)}
+.flag-hr{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/croatia-twitter.png)}
+.flag-cy{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/cyprus-twitter.png)}
+.flag-cz{background-image:url(https://em-content.zobj.net/thumbs/120/twitter/322/flag-czechia_1f1e8-1f1ff.png)}
+.flag-ee{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/estonia-twitter.png)}
+.flag-fi{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/finland-twitter.png)}
+.flag-fr{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/france-twitter.png)}
+.flag-de{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/germany-twitter.png)}
+.flag-gr{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/greece-twitter.png)}
+.flag-hu{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/hungary-twitter.png)}
+.flag-is{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/iceland-twitter.png)}
+.flag-ie{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/ireland-twitter.png)}
+.flag-it{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/italy-twitter.png)}
+.flag-lv{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/latvia-twitter.png)}
+.flag-li{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/liechtenstein-twitter.png)}
+.flag-lt{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/lithuania-twitter.png)}
+.flag-lu{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/luxembourg-twitter.png)}
+.flag-mt{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/malta-twitter.png)}
+.flag-md{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/moldova-twitter.png)}
+.flag-mc{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/monaco-twitter.png)}
+.flag-me{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/montenegro-twitter.png)}
+.flag-nl{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/netherlands-twitter.png)}
+.flag-no{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/norway-twitter.png)}
+.flag-pl{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/poland-twitter.png)}
+.flag-pt{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/portugal-twitter.png)}
+.flag-ro{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/romania-twitter.png)}
+.flag-ru{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/russia-twitter.png)}
+.flag-sm{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/san-marino-twitter.png)}
+.flag-rs{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/serbia-twitter.png)}
+.flag-sk{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/slovakia-twitter.png)}
+.flag-si{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/slovenia-twitter.png)}
+.flag-es{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/spain-twitter.png)}
+.flag-se{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/sweden-twitter.png)}
+.flag-ch{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/switzerland-twitter.png)}
+.flag-ua{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/ukraine-twitter.png)}
+.flag-gb{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/united-kingdom-twitter.png)}
+.flag-va{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/vatican-city-twitter.png)}
+
+.flag-au{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/australia-twitter.png)}
+.flag-ca{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/canada-twitter.png)}
+.flag-cn{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/china-twitter.png)}
+.flag-jp{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/japan-twitter.png)}
+.flag-kr{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/south-korea-twitter.png)}
+.flag-nz{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/new-zealand-twitter.png)}
+.flag-sg{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/singapore-twitter.png)}
+.flag-za{background-image:url(https://cdn-0.emojis.wiki/emoji-pics/twitter/south-africa-twitter.png)}
+.flag-kp{background-image:url(https://em-content.zobj.net/thumbs/120/twitter/322/flag-north-korea_1f1f0-1f1f5.png)}
+.copy {position: fixed; bottom: 0; left: 0; width: 100%; padding: 10px; background-color: #3030304b; text-align: center;}
+.copy p {font-size: 20px;}
+body { font-family: "Noto Color Emoji", Arial, sans-serif; }
+</style>
+</head>
+<body>
+    <div class="headline -c">
+        <a href="/">
+            <img class="logo" src="img/logo/logo-hand.png" alt="logo">
+            <h1>UrEmoji</h1>
+        </a>
+    </div>
+    <div class="m1">
+        <h1>Flags</h1>
+        <p>Click to copy:</p>
+        <div class="flags">
+            <div class="flag flag-us" onclick="copy('🇺🇸')"></div>
+            <div class="flag flag-ru" onclick="copy('🇷🇺')"></div>
+            <div class="flag flag-lu" onclick="copy('🇱🇺')"></div>
+            <div class="flag flag-nl" onclick="copy('🇳🇱')"></div>
+            <div class="flag flag-lt" onclick="copy('🇱🇹')"></div>
+            <div class="flag flag-lv" onclick="copy('🇱🇻')"></div>
+            <div class="flag flag-ee" onclick="copy('🇪🇪')"></div>
+            <div class="flag flag-se" onclick="copy('🇸🇪')"></div>
+            <div class="flag flag-fi" onclick="copy('🇫🇮')"></div>
+            <div class="flag flag-no" onclick="copy('🇳🇴')"></div>
+            <div class="flag flag-dk" onclick="copy('🇩🇰')"></div>
+            <div class="flag flag-is" onclick="copy('🇮🇸')"></div>
+            <div class="flag flag-ie" onclick="copy('🇮🇪')"></div>
+            <div class="flag flag-gb" onclick="copy('🇬🇧')"></div>
+            <div class="flag flag-be" onclick="copy('🇧🇪')"></div>
+            <div class="flag flag-bg" onclick="copy('🇧🇬')"></div>
+            <div class="flag flag-hr" onclick="copy('🇭🇷')"></div>
+            <div class="flag flag-cy" onclick="copy('🇨🇾')"></div>
+            <div class="flag flag-cz" onclick="copy('🇨🇿')"></div>
+            <div class="flag flag-ee" onclick="copy('🇪🇪')"></div>
+            <div class="flag flag-fi" onclick="copy('🇫🇮')"></div>
+            <div class="flag flag-fr" onclick="copy('🇫🇷')"></div>
+            <div class="flag flag-de" onclick="copy('🇩🇪')"></div>
+            <div class="flag flag-gr" onclick="copy('🇬🇷')"></div>
+            <div class="flag flag-hu" onclick="copy('🇭🇺')"></div>
+            <div class="flag flag-is" onclick="copy('🇮🇸')"></div>
+            <div class="flag flag-ie" onclick="copy('🇮🇪')"></div>
+            <div class="flag flag-it" onclick="copy('🇮🇹')"></div>
+            <div class="flag flag-lv" onclick="copy('🇱🇻')"></div>
+            <div class="flag flag-li" onclick="copy('🇱🇮')"></div>
+            <div class="flag flag-lt" onclick="copy('🇱🇹')"></div>
+            <div class="flag flag-lu" onclick="copy('🇱🇺')"></div>
+            <div class="flag flag-mt" onclick="copy('🇲🇹')"></div>
+            <div class="flag flag-md" onclick="copy('🇲🇩')"></div>
+            <div class="flag flag-mc" onclick="copy('🇲🇨')"></div>
+            <div class="flag flag-me" onclick="copy('🇲🇪')"></div>
+            <div class="flag flag-nl" onclick="copy('🇳🇱')"></div>
+            <div class="flag flag-no" onclick="copy('🇳🇴')"></div>
+            <div class="flag flag-pl" onclick="copy('🇵🇱')"></div>
+            <div class="flag flag-pt" onclick="copy('🇵🇹')"></div>
+            <div class="flag flag-ro" onclick="copy('🇷🇴')"></div>
+            <div class="flag flag-ru" onclick="copy('🇷🇺')"></div>
+            <div class="flag flag-sm" onclick="copy('🇸🇲')"></div>
+            <div class="flag flag-rs" onclick="copy('🇷🇸')"></div>
+            <div class="flag flag-sk" onclick="copy('🇸🇰')"></div>
+            <div class="flag flag-si" onclick="copy('🇸🇮')"></div>
+            <div class="flag flag-es" onclick="copy('🇪🇸')"></div>
+            <div class="flag flag-se" onclick="copy('🇸🇪')"></div>
+            <div class="flag flag-ch" onclick="copy('🇨🇭')"></div>
+            <div class="flag flag-ua" onclick="copy('🇺🇦')"></div>
+            <div class="flag flag-gb" onclick="copy('🇬🇧')"></div>
+            <div class="flag flag-va" onclick="copy('🇻🇦')"></div>
+            <div class="flag flag-au" onclick="copy('🇦🇺')"></div>
+            <div class="flag flag-ca" onclick="copy('🇨🇦')"></div>
+            <div class="flag flag-cn" onclick="copy('🇨🇳')"></div>
+            <div class="flag flag-jp" onclick="copy('🇯🇵')"></div>
+            <div class="flag flag-kr" onclick="copy('🇰🇷')"></div>
+            <div class="flag flag-nz" onclick="copy('🇳🇿')"></div>
+            <div class="flag flag-sg" onclick="copy('🇸🇬')"></div>
+            <div class="flag flag-za" onclick="copy('🇿🇦')"></div>
+            <div class="flag flag-kp" onclick="copy('🇰🇵')"></div>
+        </div>
+        <div class="ft">
+            <p>Emoji by <a href="https://emojis.wiki/">emojis.wiki</a> ❤️</p>
+        </div>
+    </div>
+    <div class="copy">
+        <p id="copied"></p>
+    </div>
+    <script>
+        function copy(text) {
+            navigator.clipboard.writeText(text);
+            document.getElementById("copied").textContent = "Copied: " + text;
+            
+            // Устанавливаем таймер на 10 секунд
+            setTimeout(function() {
+              document.getElementById("copied").textContent = "";
+            }, 3000);
+          }
+    </script>
+</body>
+</html>
