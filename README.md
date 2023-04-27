@@ -1,2 +1,2 @@
 # uremoji
-Emoji copying service (still in development).
+Emoji copying service (under development).
