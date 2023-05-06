@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
 * {
     font-family: Arial;
     margin: 0;
     padding: 0;
     color: white;
     text-decoration: none;
+    font-family: 'Noto Color Emoji', sans-serif;
 }
 html {
-    background-color: #000000;
+    background-color: #131516;
 }
 .headline {
     height: 55px;
@@ -42,11 +45,13 @@ html {
 }
 .flags {
     user-select: none;
+    font-family: 'Noto Color Emoji', sans-serif;
 }
 .flag {
     width: 70px;
     margin: 0.7rem;
     user-select: none;
+    font-family: 'Noto Color Emoji', sans-serif;
 }
 .ft {
     margin-top: 9rem;
